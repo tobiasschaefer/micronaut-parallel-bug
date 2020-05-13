@@ -1,6 +1,5 @@
 package temp;
 
-import io.micronaut.context.annotation.Context;
 import io.micronaut.context.annotation.Factory;
 import io.micronaut.context.annotation.Parallel;
 
@@ -10,7 +9,6 @@ import javax.inject.Singleton;
 @Factory
 public class MyFactory {
 
-    @Context
     @Parallel
     @Singleton
     @Named("1")
@@ -25,7 +23,6 @@ public class MyFactory {
         return new Foo();
     }
 
-    @Context
     @Parallel
     @Singleton
     @Named("2")
