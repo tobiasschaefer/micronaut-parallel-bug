@@ -16,7 +16,9 @@ public class MyFactory {
     @Named("1")
     Foo foo1() {
         try {
+            System.out.println("foo1: starting");
             Thread.sleep(5000);
+            System.out.println("foo1: completed");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -29,7 +31,9 @@ public class MyFactory {
     @Named("2")
     Foo foo2() {
         try {
+            System.out.println("foo2: starting");
             Thread.sleep(5000);
+            System.out.println("foo2: completed");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
